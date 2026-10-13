@@ -40,12 +40,12 @@ Published papers are also collected on the [Publications page]({{ base_path }}/p
 
 **2025**
 
-- Junteng Liu*, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He. "[SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond]({{ base_path }}/publication/2025-01-01-synlogic)." *arXiv*, 2025.
-- Junteng Liu*, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He. "[On the Perception Bottleneck of VLMs for Chart Understanding]({{ base_path }}/publication/2025-01-01-on-the-perception-bottleneck-of-vlms-for-chart-understanding)." *arXiv*, 2025.
+- Junteng Liu\*, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He. "[SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond]({{ base_path }}/publication/2025-01-01-synlogic)." *arXiv*, 2025.
+- Junteng Liu\*, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He. "[On the Perception Bottleneck of VLMs for Chart Understanding]({{ base_path }}/publication/2025-01-01-on-the-perception-bottleneck-of-vlms-for-chart-understanding)." *arXiv*, 2025.
 
 **2024**
 
-- Junteng Liu*, Shiqi Chen, Yu Cheng, Junxian He. "[On the Universal Truthfulness Hyperplane Inside LLMs]({{ base_path }}/publication/2024-01-01-on-the-universal-truthfulness-hyperplane-inside-llms)." *EMNLP 2024*.
+- Junteng Liu\*, Shiqi Chen, Yu Cheng, Junxian He. "[On the Universal Truthfulness Hyperplane Inside LLMs]({{ base_path }}/publication/2024-01-01-on-the-universal-truthfulness-hyperplane-inside-llms)." *EMNLP 2024*.
 - Shiqi Chen, Miao Xiong, Junteng Liu, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He. "[In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation]({{ base_path }}/publication/2024-01-01-in-context-sharpness-as-alerts)." *ICML 2024*.
 
 **2023**
