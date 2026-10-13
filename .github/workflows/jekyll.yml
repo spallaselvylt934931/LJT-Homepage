@@ -1,4 +1,6 @@
-# Workflow for building and deploying an Academic Pages / Jekyll site to GitHub Pages
+# Workflow for building and deploying the site to GitHub Pages
+# Uses the classic gh-pages branch deployment so it works on fresh forks
+# where the Pages creation API may reject the Actions GITHUB_TOKEN.
 name: Deploy Academic Pages template site to Pages
 
 on:
@@ -9,9 +11,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Sets permissions of the GITHUB_TOKEN
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -34,26 +36,14 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
           cache-version: 0
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v6.0.0
-        with:
-          enablement: true
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v5.0.0
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+      - name: Deploy to GitHub Pages via gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          keep_files: false
